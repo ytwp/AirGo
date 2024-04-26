@@ -17,7 +17,7 @@ var PaySvc *Pay
 func (ps *Pay) InitAlipayClient(pay *model.Pay) (*alipay.Client, error) {
 	// false时用开发网关，https://openapi.alipaydev.com/gateway.do
 	// true时用正式环境网关，https://openapi.alipay.com/gateway.do
-	client, err := alipay.New(pay.AliPay.AlipayAppID, pay.AliPay.AlipayAppPrivateKey, false)
+	client, err := alipay.New(pay.AliPay.AlipayAppID, pay.AliPay.AlipayAppPrivateKey, true)
 	if err != nil {
 		return nil, err
 	}
