@@ -72,4 +72,5 @@ jobs:
           pre_command: export CGO_ENABLED=0
           build_flags: -trimpath
           ldflags: -s -w
-          tag: ${{ steps.get_version.outputs.VERSION }} # 添加该行
+          tag: ${{ steps.get_version.outputs.VERSION }} # 更新该行
+          releasename: ${{ steps.get_version.outputs.VERSION }} # 添加该行
