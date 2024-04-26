@@ -6,7 +6,7 @@ export default {
     sort:"排序",
     purchase:"購買",
     resultText1:"請返回首頁查看服務狀態",
-    resultText2:"請儘快完成支付",
+    resultText2:"請儘快完成支付，然后返回首頁查看服務狀態",
     resultText3:"支付遇到問題",
     resultText4:"前往支付寶",
     resultText5:"前往易支付",
