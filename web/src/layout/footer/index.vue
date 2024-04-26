@@ -2,11 +2,7 @@
   <div class="layout-footer pb15">
     <div class="layout-footer-warp">
       <div class="mt5">
-        <el-link>Version old-version</el-link>
-        <span> | </span>
-        <el-link href="https://github.com/ppoonk/AirGo">© AirGo</el-link>
-        <span> | </span>
-        <el-link >By {{ themeConfig.globalTitle }}</el-link>
+        <el-link >{{ themeConfig.globalTitle }}</el-link>
       </div>
     </div>
   </div>

@@ -51,7 +51,7 @@
             <el-button size="small" type="primary" @click="openSubDialog(v.sub_uuid)">{{$t('message.home.button_copySub')}}</el-button>
             <el-button size="small" type="danger" @click="resetSubscribeUUID(v)">{{$t('message.home.button_resetSub')}}</el-button>
             <el-button size="small" type="success" @click="renew(v)">{{$t('message.home.button_renew')}}</el-button>
-            <el-dropdown style="margin-left: auto">
+            <!-- <el-dropdown style="margin-left: auto">
               <span class="el-dropdown-link">
                 <el-button>更多操作<el-icon class="el-icon--right"><arrow-down /></el-icon></el-button>
               </span>
@@ -65,7 +65,7 @@
                   </el-dropdown-item>
                 </el-dropdown-menu>
               </template>
-            </el-dropdown>
+            </el-dropdown> -->
           </div>
           <div>
           </div>
