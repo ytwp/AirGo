@@ -53,8 +53,8 @@ jobs:
 
       - name: Set version
         run: |
-          cd ${GITHUB_WORKSPACE}/web
-          sed -i 's/old-version/${{ steps.get_version.outputs.VERSION }}/g' ./src/layout/footer/index.vue
+#          cd ${GITHUB_WORKSPACE}/web
+#          sed -i 's/old-version/${{ steps.get_version.outputs.VERSION }}/g' ./src/layout/footer/index.vue
           cd ${GITHUB_WORKSPACE}/server
           sed -i 's/old-version/${{ steps.get_version.outputs.VERSION }}/g' ./constant/index.go
 
