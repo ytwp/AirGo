@@ -16,5 +16,12 @@ func GetEnabledPayList(ctx *gin.Context) {
 		response.Fail(err.Error(), nil, ctx)
 		return
 	}
+	for i := range list {
+		list[i].AliPay.AlipayAliPublicKey = ""
+		list[i].AliPay.AlipayAppID = ""
+		list[i].AliPay.AlipayEncryptKey = ""
+		list[i].AliPay.AlipayNotifyURL = ""
+		list[i].AliPay.AlipayAppPrivateKey = ""
+	}
 	response.OK("GetEnabledPayList success", list, ctx)
 }
