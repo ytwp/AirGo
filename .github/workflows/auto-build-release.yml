@@ -20,23 +20,18 @@ jobs:
             goos: darwin
           - goarch: arm
             goos: darwin
-
-
           - goarch: arm
             goos: windows
           - goarch: 386
             goos: windows
-
           - goarch: arm
             goos: freebsd
           - goarch: 386
             goos: freebsd
-
           - goarch: arm
             goos: openbsd
           - goarch: 386
             goos: openbsd
-
       fail-fast: false
 
     steps:
@@ -77,3 +72,4 @@ jobs:
           pre_command: export CGO_ENABLED=0
           build_flags: -trimpath
           ldflags: -s -w
+          tag: ${{ steps.get_version.outputs.VERSION }} # 添加该行
