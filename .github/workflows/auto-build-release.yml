@@ -60,7 +60,7 @@ jobs:
           mv web ../server/web/
 
       - name: Build server
-        uses: wangyoucao577/go-release-action@master
+        uses: wangyoucao577/go-release-action@v1.50
         with:
           github_token: ${{ secrets.ACTION_TOKEN }}
           goos: ${{ matrix.goos }}
@@ -72,5 +72,5 @@ jobs:
           pre_command: export CGO_ENABLED=0
           build_flags: -trimpath
           ldflags: -s -w
-          tag: ${{ steps.get_version.outputs.VERSION }} # 更新该行
-          releasename: ${{ steps.get_version.outputs.VERSION }} # 添加该行
+          release_tag: ${{ steps.get_version.outputs.VERSION }}
+          release_name: ${{ steps.get_version.outputs.VERSION }}
