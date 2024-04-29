@@ -231,9 +231,9 @@
                               v-for="(v,k) in shopStoreData.payList.value" :key="k">
                 <el-radio :label="v.id" style="width: 800px;margin-top: 10px">
                   <div style="display: flex;align-items: center">
-                        <span style="margin-right: 5px">
-                          <el-image :src="v.pay_logo_url" style="height: 15px;"></el-image>
-                        </span>
+                    <span style="margin-right: 5px">
+                      <el-image :src="v.pay_logo_url" style="height: 15px;width: 15px;"></el-image>
+                    </span>
                     <span>{{ v.name }}</span>
                     <span style="margin-left: 30px;color: #6cacf5" v-if="v.pay_type === constantStore.PAY_TYPE_BALANCE">[ {{ $t("message.adminUser.SysUser.balance") }}: {{ userInfos.balance }} ]</span>
                   </div>

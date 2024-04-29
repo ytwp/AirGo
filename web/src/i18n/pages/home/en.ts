@@ -1,6 +1,6 @@
 export default {
   home: {
-    no_data:"There is currently no data available",
+    no_data:"暂无订阅，请先商店购买订阅套装～",
 
     button_push:"PUSH",
     button_details:"Details",
